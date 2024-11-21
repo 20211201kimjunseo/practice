@@ -1,0 +1,15 @@
+def calculate_numbers():
+    numbers = []
+    for i in range(4, 11):
+        if i > 4 and i < 10:
+            numbers.append(i)
+    # 계산 결과 저장
+    squared_numbers = [num ** 2 for num in numbers]
+    cumulative_sum = 0
+    cumulative_sums = []
+    for num in numbers:
+        cumulative_sum += num
+        cumulative_sums.append(cumulative_sum)
+    print("4보다 크고 10보다 작은 숫자:", numbers)
+    print("각 숫자의 제곱:", squared_numbers)
+    print("누적 합:", cumulative_sums)
